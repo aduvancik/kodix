@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -12,8 +12,8 @@ export default function Header() {
             </ul>
             <img src="logo-kodix.png" alt="logo" />
             <div className="flex gap-2 h-min">
-                <button type="button" className="bg-[#ffffff] border-[1px] border-[#0000001A] text-[#000000] rounded-3xl py-[12.5px] px-[32.5px]">Log in</button>
-                <button type="button" className="bg-[#04AA00] text-white rounded-3xl py-[12.5px] px-[32.5px]">Sign Up</button>
+                <Link to="./login" className="bg-[#ffffff] border-[1px] border-[#0000001A] text-[#000000] rounded-3xl py-[12.5px] px-[32.5px]">Log in</Link>
+                <Link to="/signUp" className="bg-[#04AA00] text-white rounded-3xl py-[12.5px] px-[32.5px]">Sign Up</Link>
             </div>
         </header>
     )
