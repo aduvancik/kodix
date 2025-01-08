@@ -2,12 +2,7 @@
 
 <p>test task in the kodix company</p>
 
-<h2>Project Screenshots:</h2>  
   
-<h2>🧐 about project</h2>
-
-<p>here you can view ads, filter by name, price and category, or log in and post ads yourself, add them to the cart, and correspond with the seller</p>
-
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. Clone the repository</p>
