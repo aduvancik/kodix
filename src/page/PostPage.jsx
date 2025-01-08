@@ -34,7 +34,7 @@ export default function PostPage() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="xl:flex h-screen pt-[34px] pb-[34px] px-[40px] xl:px-[138px]">
+    <div className="xl:flex xl:justify-normal justify-center h-screen pt-[34px] pb-[34px] px-[40px] xl:px-[138px]">
       {/* Main Post Section */}
       <div className="flex flex-col gap-[20px] mr-[50px] xl:mr-[130px] max-w-[653px] w-full">
         <div className="flex flex-col gap-[8px]">

@@ -5,13 +5,13 @@ export default function Post({ title, body, date, img, flex }) {
   console.log(body);
 
   return (
-    <div className={`${flex ? "flex flex-row max-w-[471px] w-full" : "max-w-[248px] w-full"
+    <div className={`${flex ? "flex flex-row max-w-[471px] w-full" : " xl:max-w-[248px] w-full"
       } gap-5 hover:scale-110 duration-150 cursor-pointer`}>
-      <div className='w-[246px] h-[136px] bg-[#F5F5F5] rounded-2xl'>
+      <div className='w-full max-w-[246px] h-[136px] bg-[#F5F5F5] rounded-2xl'>
         <img
           src={img}
           alt={title}
-          className="w-full h-full object-cover rounded-3xl"
+          className="w-full max-w-full h-full object-cover rounded-3xl"
         />
       </div>
       <div className={`${flex ? "max-w-[50%] w-full" : ""} flex flex-col gap-5`}>

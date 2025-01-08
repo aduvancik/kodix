@@ -21,7 +21,7 @@ export default function BlogPage() {
   if (!mainPost) return <div><Loading /></div>;
 
   return (
-    <div className="pb-[34px] flex flex-col items-center">
+    <div className="pb-[34px] px-[10px] flex flex-col items-center">
       <Link to={`/post/${mainPost.id}`} state={{ randomPosts }}>
         <div className='flex py-[34px] flex-col gap-[20px]'>
           <div className='flex gap-[6px] items-center justify-center'>
@@ -64,9 +64,9 @@ export default function BlogPage() {
           </div>
         </div>
       </Link>
-      <div className="mt-[15px] border-[1px] border-[#D6D6D6] rounded-3xl flex gap-5 p-5">
+      <div className="mt-[15px] border-[1px] border-[#D6D6D6] rounded-3xl flex justify-between  lg:gap-5 p-5 max-w-[1094px] w-full">
         {randomPosts.map((post) => (
-          <Link to={`/post/${post.id}`} key={post.id}>
+          <Link to={`/post/${post.id}`} key={post.id} className="max-w-[20%]">
             <Post {...post} flex={false} />
           </Link>
         ))}
