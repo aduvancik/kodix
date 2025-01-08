@@ -8,6 +8,7 @@ import NotFoundPage from "./page/NotFoundPage";
 
 import "./reset.css";
 import "./index.css";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<BlogPage />} />
-            <Route path="/Post" element={<PostPage />} />
+            <Route
+              path="/post/:id"
+              element={
+                <PrivateRoute>
+                  <PostPage />
+                </PrivateRoute>
+              }
+            />
           </Route>
           <Route path="/login" element={<LogInPage />} />
           <Route path="/SignUp" element={<SignUpPage />} />
