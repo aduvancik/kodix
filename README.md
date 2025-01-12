@@ -8,7 +8,7 @@
 <p>1. Clone the repository</p>
 
 ```
-git clone https://github.com/aduvancik/shopchik.git
+git clone https://github.com/aduvancik/kodix.git
 ```
 
 <p>2. Install npm modules</p>
